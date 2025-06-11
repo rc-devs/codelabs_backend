@@ -53,3 +53,18 @@ dog.speak #call instance methods
 #Define a class called 'Cat' that inherits from the 'Animal' class.
 #Create an instance of the 'Cat' class called 'cat'.
 #Call the 'speak' method on the 'cat' instance.
+
+class Cat < Animal
+  def initialize(name, sound)
+    super (name)
+    @sound = sound
+  end
+  def print_sound
+    print @sound
+  end
+end
+
+cat = Cat.new("cat", "meow")
+
+cat.speak
+cat.print_sound
