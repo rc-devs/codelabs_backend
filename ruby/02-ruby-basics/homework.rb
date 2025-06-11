@@ -34,8 +34,6 @@ my_book.print_pages
 # Define a method called 'speak' that prints the name of the animal.
 # Create an instance of the Animal class called 'dog'.
 # Call the 'speak' method on the 'dog' instance.
-
-
 class Animal
   def initialize(name)
     @name = name
@@ -53,7 +51,6 @@ dog.speak #call instance methods
 #Define a class called 'Cat' that inherits from the 'Animal' class.
 #Create an instance of the 'Cat' class called 'cat'.
 #Call the 'speak' method on the 'cat' instance.
-
 class Cat < Animal
   def initialize(name, sound)
     super (name)
@@ -69,7 +66,6 @@ class Dog < Cat
     super(name, sound)
   end
 end
-
 
 cat = Cat.new("cat", "meow")
 new_dog = Dog.new("dog", "bark")
