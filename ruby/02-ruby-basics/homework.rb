@@ -64,7 +64,17 @@ class Cat < Animal
   end
 end
 
+class Dog < Cat
+  def initialize(name, sound)
+    super(name, sound)
+  end
+end
+
+
 cat = Cat.new("cat", "meow")
+new_dog = Dog.new("dog", "bark")
 
 cat.speak
 cat.print_sound
+new_dog.speak
+new_dog.print_sound
