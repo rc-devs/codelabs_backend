@@ -105,9 +105,9 @@ class Vehicle
   end
 
   def print_details
-    print @make 
+    print_make()
     puts "\n"
-    print_model() #trying this out
+    print_model() 
     puts "\n"
   end
 end
