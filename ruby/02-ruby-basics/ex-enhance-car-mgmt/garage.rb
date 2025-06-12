@@ -1,13 +1,10 @@
-
-
-
 class Garage
   def initialize
     @garage_storage = []
   end
 
-  def add_vehicle
-    
+  def add_vehicle(vehicle)
+    @garage_storage << vehicle #push or insert to array
   end
 
   def remove_class_variable
