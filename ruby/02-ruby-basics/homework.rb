@@ -194,6 +194,12 @@ car.print_color
   end
  end
 
+ class Apple < Fruits
+ end
+
+ apple = Apple.new("Apple")
+
+ apple.print_name
 
 
 
