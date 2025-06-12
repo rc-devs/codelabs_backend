@@ -105,3 +105,14 @@ class Vehicle
     print_model() #trying this out
   end
 end
+
+saturn = Vehicle.new("Saturn", "SL2")
+honda = Vehicle.new("Honda", "Accord")
+
+saturn.print_details
+saturn.print_make
+saturn.print_model
+
+honda.print_details
+honda.print_make
+honda.print_model
