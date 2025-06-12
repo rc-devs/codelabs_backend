@@ -29,4 +29,17 @@
     def color=(color) 
       @color = color
     end
+
+    def return_details
+      print @make
+        puts "\n"
+      print @model
+        puts "\n"
+      print @color
+        puts "\n"
+    end
   end
+
+  car = Car.new("Honda", "Accord", "Yellow")
+
+  car.return_details
