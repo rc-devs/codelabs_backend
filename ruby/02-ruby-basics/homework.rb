@@ -207,15 +207,44 @@ car.print_color
 
 
 
-
-
-
 #### enhance car management system ### 
 #In this exercise, you will create a more complex Ruby program involving the Car class. This program will not only handle car properties but also include a collection of cars and perform various operations using built-in array methods.
 
 #Define a Car class:
   #The class should initialize with a make, model, and color. Include methods to get and set each of these attributes.
   #Add a method info that returns a string with all the car's details.
+
+  class Kar 
+    def initialize(make, model, color)
+      @make = make
+      @model = model
+      @color = color
+    end
+
+    def make #getter
+      @make
+    end
+
+    def make=(make) #setter (still confused)
+      @make = make
+    end
+
+     def model 
+      @model
+    end
+
+    def model=(model) 
+      @model = model
+    end
+
+    def color 
+      @color
+    end
+
+    def color=(color) 
+      @color = color
+    end
+  end
 
 #Create a Garage class:
   #This class will manage a collection of Car objects.
