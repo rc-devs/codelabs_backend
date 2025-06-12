@@ -125,9 +125,13 @@ class Car < Vehicle
   end
 end
 
+class Motorcycle < Vehicle
+end
+
 saturn = Vehicle.new("Saturn", "SL2")
 honda = Vehicle.new("Honda", "Accord")
 toyota = Car.new("Toyota", "Corolla", 2010) #don't forget proper number of arguments!
+honda_motorcycle = Motorcycle.new("Honda", "NT1100")
 
 saturn.print_details
 saturn.print_make
@@ -138,3 +142,5 @@ honda.print_make
 honda.print_model
 
 toyota.print_details
+
+honda_motorcycle.print_details
