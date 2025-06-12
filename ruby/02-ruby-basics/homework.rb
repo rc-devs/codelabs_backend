@@ -147,3 +147,40 @@ honda.print_model
 toyota.print_details
 
 honda_motorcycle.print_details
+
+### PRACTICE EXERCISES ###
+
+### classes and objects
+#Create a Ruby program that performs the following tasks using classes and objects:
+  #Define a class called 'Car' that takes a make and model as arguments.
+  #Define a method called 'print_color' that prints the color of the car.
+  #Create an instance of the 'Car' class called 'car'.
+  #Create a test for the 'Car' class that tests the 'print_color' method.
+
+
+
+### iheritance ###
+#Create a Ruby program that performs the following tasks using inheritance:
+  #Define a class called 'Fruit' that takes a name as an argument.
+  #Define a method called 'print_name' that prints the name of the fruit.
+  #Define a class called 'Apple' that inherits from the 'Fruit' class.
+  #Create an instance of the 'Apple' class called 'apple'.
+  #Create a test for the 'Apple' class that tests the 'print_name' method
+
+
+  
+#### enhance car management system ### 
+#In this exercise, you will create a more complex Ruby program involving the Car class. This program will not only handle car properties but also include a collection of cars and perform various operations using built-in array methods.
+
+#Define a Car class:
+  #The class should initialize with a make, model, and color. Include methods to get and set each of these attributes.
+  #Add a method info that returns a string with all the car's details.
+
+#Create a Garage class:
+  #This class will manage a collection of Car objects.
+  #Implement methods to add a car, remove a car by make and model, and list all cars.
+  #Add a method to find all cars of a specific color.
+  #add a method to clear all cars from the garage.
+
+#Write tests for both classes:
+  #Test all the functionalities of the Car and Garage classes.
