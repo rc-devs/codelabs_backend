@@ -1,3 +1,6 @@
+
+garage_storage = []
+
 class Garage < Vehicle
   def add_vehicle
 
