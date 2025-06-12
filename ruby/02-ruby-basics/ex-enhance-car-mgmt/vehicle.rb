@@ -36,6 +36,6 @@
     end
   end
 
-  vehicle = Vehicle.new("Honda", "Accord", "Yellow")
+=begin   vehicle = Vehicle.new("Honda", "Accord", "Yellow")
 
-  vehicle.return_details
+  vehicle.return_details =end
