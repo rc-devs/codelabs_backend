@@ -166,6 +166,7 @@ class Car
 
   def print_color
     print @color
+     puts "\n"
   end
 end
 
@@ -191,6 +192,7 @@ car.print_color
 
   def print_name
     print @name
+     puts "\n"
   end
  end
 
