@@ -40,6 +40,7 @@ class Animal
   end
   def speak
     print @name
+    puts "\n"
   end
 end
 
@@ -58,6 +59,7 @@ class Cat < Animal
   end
   def print_sound
     print @sound
+    puts "\n"
   end
 end
 
@@ -94,15 +96,19 @@ class Vehicle
 
   def print_make
     print @make
+    puts "\n"
   end
 
   def print_model
     print @model
+    puts "\n"
   end
 
   def print_details
-    print @make
+    print @make 
+    puts "\n"
     print_model() #trying this out
+    puts "\n"
   end
 end
 
