@@ -2,6 +2,10 @@
 garage_storage = []
 
 class Garage < Vehicle
+  def initialize(make, model, color)
+    super(make, model, color)
+  end
+  
   def add_vehicle
 
   end
@@ -19,6 +23,6 @@ class Garage < Vehicle
   end
 
   def empty_garage
-    
+
   end
 end
