@@ -176,15 +176,6 @@ car.print_color
 ## needs test
 
 
-
-
-
-
-
-
-
-
-
 ### iheritance ###
 #Create a Ruby program that performs the following tasks using inheritance:
   #Define a class called 'Fruit' that takes a name as an argument.
@@ -192,6 +183,20 @@ car.print_color
   #Define a class called 'Apple' that inherits from the 'Fruit' class.
   #Create an instance of the 'Apple' class called 'apple'.
   #Create a test for the 'Apple' class that tests the 'print_name' method
+
+ class Fruits
+  def initialize(name)
+    @name = name
+  end
+
+  def print_name
+    print @name
+  end
+ end
+
+
+
+
 
 
 
