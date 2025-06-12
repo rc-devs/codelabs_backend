@@ -74,3 +74,14 @@ cat.speak
 cat.print_sound
 new_dog.speak
 new_dog.print_sound
+
+### 03 practice problem ###
+#Create a Ruby program that performs the following tasks using encapsulation and access modifiers that includes public and private methods:
+
+#Define a class called Vehicle that takes a make and model as arguments.
+#Define a method called print_make that prints the make of the car.
+#Define a method called print_model that prints the model of the car.
+#Define a method called print_details that prints the make and model of the car.
+#Define a class called Car that inherits from the Vehicle class.
+#Define a method called print_details that prints the make, model, and year of the car.
+#Define a class called Motorcycle that inherits from the Vehicle class.
