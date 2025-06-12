@@ -85,3 +85,23 @@ new_dog.print_sound
 #Define a class called Car that inherits from the Vehicle class.
 #Define a method called print_details that prints the make, model, and year of the car.
 #Define a class called Motorcycle that inherits from the Vehicle class.
+
+class Vehicle
+  def initialize(make, model)
+    @make = make
+    @model = model
+  end
+
+  def print_make
+    print @make
+  end
+
+  def print_model
+    print @model
+  end
+
+  def print_details
+    print @make
+    print_model() #trying this out
+  end
+end
