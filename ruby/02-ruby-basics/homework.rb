@@ -120,8 +120,11 @@ class Car < Vehicle
   
   def print_details
     print_make()
+       puts "\n"
     print_model()
+       puts "\n"
     print @year
+      puts "\n"
   end
 end
 
