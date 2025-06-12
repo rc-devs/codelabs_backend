@@ -1,5 +1,5 @@
 
-  class Car 
+  class Vehicle 
     def initialize(make, model, color)
       @make = make
       @model = model
@@ -35,6 +35,6 @@
     end
   end
 
-  car = Car.new("Honda", "Accord", "Yellow")
+  vehicle = Vehicle.new("Honda", "Accord", "Yellow")
 
-  car.return_details
+  vehicle.return_details
