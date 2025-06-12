@@ -1,13 +1,13 @@
 
-garage_storage = []
 
-class Garage < Vehicle
-  def initialize(make, model, color)
-    super(make, model, color)
+
+class Garage
+  def initialize
+    @garage_storage = []
   end
-  
-  def add_vehicle
 
+  def add_vehicle
+    
   end
 
   def remove_class_variable
