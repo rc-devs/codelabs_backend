@@ -31,12 +31,7 @@
     end
 
     def return_details
-      print @make
-        puts "\n"
-      print @model
-        puts "\n"
-      print @color
-        puts "\n"
+      return print "This vehicle is a #{color} #{make} #{model}"
     end
   end
 
