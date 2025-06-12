@@ -20,6 +20,6 @@ class Garage
   end
 
   def empty_garage
-
+    @garage_storage = []
   end
 end
