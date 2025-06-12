@@ -157,6 +157,32 @@ honda_motorcycle.print_details
   #Create an instance of the 'Car' class called 'car'.
   #Create a test for the 'Car' class that tests the 'print_color' method.
 
+class Car
+  def initialize(make_2, model_2, color)
+    @make_2 = make_2
+    @model_2 = model_2
+    @color = color
+  end
+
+  def print_color
+    print @color
+  end
+end
+
+car = Car.new("Honda", "Accord", "Blue")
+
+car.print_color
+
+## needs test
+
+
+
+
+
+
+
+
+
 
 
 ### iheritance ###
@@ -168,7 +194,7 @@ honda_motorcycle.print_details
   #Create a test for the 'Apple' class that tests the 'print_name' method
 
 
-  
+
 #### enhance car management system ### 
 #In this exercise, you will create a more complex Ruby program involving the Car class. This program will not only handle car properties but also include a collection of cars and perform various operations using built-in array methods.
 
