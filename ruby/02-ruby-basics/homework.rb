@@ -112,8 +112,22 @@ class Vehicle
   end
 end
 
+class Car < Vehicle
+  def initialize(make, model, year)
+    super(make, model)
+    @year = year
+  end
+  
+  def print_details
+    print_make()
+    print_model()
+    print @year
+  end
+end
+
 saturn = Vehicle.new("Saturn", "SL2")
 honda = Vehicle.new("Honda", "Accord")
+toyota = Car.new("Toyota", "Corolla", 2010) #don't forget proper number of arguments!
 
 saturn.print_details
 saturn.print_make
@@ -122,3 +136,5 @@ saturn.print_model
 honda.print_details
 honda.print_make
 honda.print_model
+
+toyota.print_details
