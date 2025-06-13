@@ -1,5 +1,7 @@
-require "nokogiri"
+require "nokogiri" #require to use provided objects
 
-doc = Nokogiri::HTML(File.open("index.html"))
+#Nokogiri::HTML used to parse html doc at file string
+#File.open opens specified file
+doc = Nokogiri::HTML(File.open("index.html")) #creates a nokogiri instance
 
-puts doc.css("h1").text
+puts doc.css("h1").text #get css and text content of the h1 element 
