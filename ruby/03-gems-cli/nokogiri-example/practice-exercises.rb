@@ -15,10 +15,15 @@ class API
     #table.wikitable.sortable is the element from the html page (table element class)
     #tr td are the html elements table row and table detail; we are digging in to the layers of the html
     films = parsed_page.css("table.wikitable.sortable tr td:nth-child(2) i a").map {|film| film.text.strip} #iterate over with map
+    puts "You have selected the top ten films for the year #{year}"
     films.each_with_index do |film, index|
      puts "#{index + 1}. #{film}" # iterate over and print the index number(+1) and film name
     end
+     puts "\n"
   end
 end
 
 API.get_films_by_year(2019)
+API.get_films_by_year(2012)
+API.get_films_by_year(2010)
+API.get_films_by_year(2020)
