@@ -12,6 +12,8 @@ class API
     parsed_page = Nokogiri::HTML(unparsed_page.body) #get url and access html body element content
 
     #extract the element as nokogiri instances
+    #table.wikitable.sortable is the element from the html page (table element class)
+    #tr td are the html elements table row and table detail; we are digging in to the layers of the html
     films = parsed_page.css("table.wikitable.sortable tr td:nth-child(2) i a").map {|film| film.text.strip} #iterate over with map
   end
 end
