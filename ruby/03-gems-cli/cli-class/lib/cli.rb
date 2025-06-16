@@ -19,5 +19,13 @@ class CLI
     puts "\n Please enter a year to see the Oscar winning films for that year \n\n"
 
     input_year = gets.chomp
+
+    find_films_by_year(input_year) unless input_year == 'exit'
+    
+    input_year #return?
+  end
+
+  def find_films_by_year(year)
+    puts "\n Let me find the Oscar winning films for #{year} \n\n"
   end
 end
