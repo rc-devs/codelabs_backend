@@ -7,6 +7,10 @@ class API
   def self.find_films_by_year(year)
     doc = Nokogiri::HTML(URI.open(BASE_URL + year))
     scraped_movies = JSON.parse(doc.text)
-    puts scraped_movies
+    if scraped_movies.empty?
+    puts "Sorry, I couldn't find any films for #{year}."
+  end
+  scraped_movies.each do |movie|
+    puts "| #{movie{'title'}} | #{movie{'year'}} | #{movie{'nominations'}} | #{movie{'best_picture'}}"
   end
 end

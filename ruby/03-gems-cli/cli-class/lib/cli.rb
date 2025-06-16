@@ -1,3 +1,5 @@
+require_relative ".api.rb"
+
 class CLI 
   def run
     system('clear')
@@ -21,7 +23,7 @@ class CLI
     input_year = gets.chomp
 
     find_films_by_year(input_year) unless input_year == 'exit'
-    
+
     input_year #return?
   end
 
