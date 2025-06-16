@@ -1,5 +1,6 @@
 require "nokogiri"
 require "httparty"
+require "debug"
 
 module Scraper
   INDEX_URL = "https://www.scrapethissite.com/pages/simple/"
@@ -15,7 +16,7 @@ module Scraper
       capital =  country.css("country-capital").text
       population = country.css("country-population").text
       area =  country.css("country-area").text
-      
+      binding.break #idky
       puts "#{name} #{capital} #{population} #{area}"
     end
   end
