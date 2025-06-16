@@ -1,3 +1,3 @@
-require "./lib/cli"
+require_relative "./lib/cli.rb"
 
 CLI.new.start
