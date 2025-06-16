@@ -10,7 +10,3 @@ class CLI
     gets.strip
   end
 end
-
-
-puts "Welcome to the Countries of the World CLI!"
-    puts "What is your name?"
