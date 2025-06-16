@@ -7,6 +7,7 @@ module Scraper
   def self.scrape_countries
     unparsed_page = HTTParty.get(INDEX_URL) #get request
     parsed_page = Nokogiri::HTML(unparsed_page.body)
-    puts parsed_page
+    countries = parsed_page.css("div.country")
+    puts countries
   end
 end
