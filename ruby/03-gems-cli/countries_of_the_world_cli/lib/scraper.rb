@@ -9,5 +9,14 @@ module Scraper
     parsed_page = Nokogiri::HTML(unparsed_page.body)
     countries = parsed_page.css("div.country")
     puts countries
+
+    countries.each do |country|
+      name = country.css("country-name").text
+      capital =  country.css("country-capital").text
+      population = country.css("country-population").text
+      area =  country.css("country-area").text
+      
+      puts "#{name} #{capital} #{population} #{area}"
+    end
   end
 end
