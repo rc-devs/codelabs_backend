@@ -1,7 +1,19 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    bigdecimal (3.2.2)
+    csv (3.3.5)
     diff-lcs (1.6.2)
+    httparty (0.23.1)
+      csv
+      mini_mime (>= 1.0.0)
+      multi_xml (>= 0.5.2)
+    mini_mime (1.1.5)
+    multi_xml (0.7.2)
+      bigdecimal (~> 3.1)
+    nokogiri (1.18.8-x64-mingw-ucrt)
+      racc (~> 1.4)
+    racc (1.8.1)
     rspec (3.13.1)
       rspec-core (~> 3.13.0)
       rspec-expectations (~> 3.13.0)
@@ -20,6 +32,8 @@ PLATFORMS
   x64-mingw-ucrt
 
 DEPENDENCIES
+  httparty
+  nokogiri
   rspec
 
 BUNDLED WITH
