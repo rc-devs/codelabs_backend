@@ -12,11 +12,11 @@ module Scraper
     puts countries
 
     countries.each do |country|
-      name = country.css("country-name").text
-      capital =  country.css("country-capital").text
-      population = country.css("country-population").text
-      area =  country.css("country-area").text
-      binding.break #idky
+      name = country.css(".country-name").text.strip
+      capital =  country.css(".country-capital").text.strip
+      population = country.css(".country-population").text.strip
+      area =  country.css(".country-area").text.strip
+    
       puts "#{name} #{capital} #{population} #{area}"
     end
   end
