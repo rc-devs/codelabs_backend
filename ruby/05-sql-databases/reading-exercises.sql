@@ -1,4 +1,4 @@
--- STUDENT database
+-- Exercise 1 Student database (SELECT w/ conditions)
 CREATE TABLE Students (
     StudentID int,
     LastName varchar(255),
