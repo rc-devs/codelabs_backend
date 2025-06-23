@@ -63,14 +63,29 @@ CREATE TABLE Sales (
 
 INSERT INTO Authors(AuthorID, AuthorName)
 VALUES
-    (01, "JRR Tolkien"),
-    (02, "Ann Leckie"),
-    (03, "Saraj J. Maas"),
-    (04, "F. Scott Fitzgerald")
-
+    (01, "Saraj J. Maas"),
+    (02, "JRR Tolkien"),
+    (03, "F. Scott Fitzgerald"),
+    (04, "Ann Leckie")
 INSERT INTO Books (BookID, Title, AuthorID, PublicationYear)
 VALUES
- 
+    -- Sarah J. Maas
+    (1, 'Throne of Glass', 1, 2012),
+    (2, 'A Court of Thorns and Roses', 1, 2015),
+    (3, 'House of Earth and Blood', 1, 2020),
+    -- J.R.R. Tolkien
+    (4, 'The Hobbit', 2, 1937),
+    (5, 'The Fellowship of the Ring', 2, 1954),
+    (6, 'The Two Towers', 2, 1954),
+    (13, 'The Return of the King', 2, 1955)
+    -- F. Scott Fitzgerald
+    (7, 'The Great Gatsby', 3, 1925),
+    (8, 'Tender Is the Night', 3, 1934),
+    (9, 'This Side of Paradise', 3, 1920),
+    -- Ann Leckie
+    (10, 'Ancillary Justice', 4, 2013),
+    (11, 'Ancillary Sword', 4, 2014),
+    (12, 'Ancillary Mercy', 4, 2015)
 
 
 -- list books and authors
