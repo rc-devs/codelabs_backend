@@ -43,50 +43,47 @@ SELECT FirstName, AVG(GPA) FROM Students2 GROUP BY FirstName HAVING COUNT(*) > 1
 
 --Exercise 3 bookstore database
 CREATE TABLE Authors(
-    AuthorID: varchar(255),
-    AuthorName: varchar(255),
-)
+    AuthorID varchar(255),
+    AuthorName varchar(255)
+);
 
 CREATE TABLE Books (
-    BookID: int,
-    Title: varchar(255),
-    AuthorID: varchar(255),
-    PublicationYear: int
-)
+    BookID int,
+    Title varchar(255),
+    AuthorID varchar(255),
+    PublicationYear int
+);
 
 CREATE TABLE Sales (
-    SaleID: int,
-    BookID: int, 
-    QuantitySold: int,
-    SaleDate; date
-)
+    SaleID int,
+    BookID int, 
+    QuantitySold int,
+    SaleDate date
+);
 
 INSERT INTO Authors(AuthorID, AuthorName)
 VALUES
-    (01, "Saraj J. Maas"),
-    (02, "JRR Tolkien"),
-    (03, "F. Scott Fitzgerald"),
-    (04, "Ann Leckie")
+    (01, 'Saraj J. Maas'),
+    (02, 'JRR Tolkien'),
+    (03, 'F. Scott Fitzgerald'),
+    (04, 'Ann Leckie');
 
 INSERT INTO Books (BookID, Title, AuthorID, PublicationYear)
 VALUES
-    -- Sarah J. Maas
+  
     (1, 'Throne of Glass', 1, 2012),
     (2, 'A Court of Thorns and Roses', 1, 2015),
     (3, 'House of Earth and Blood', 1, 2020),
-    -- J.R.R. Tolkien
     (4, 'The Hobbit', 2, 1937),
     (5, 'The Fellowship of the Ring', 2, 1954),
     (6, 'The Two Towers', 2, 1954),
-    (13, 'The Return of the King', 2, 1955)
-    -- F. Scott Fitzgerald
+    (13, 'The Return of the King', 2, 1955),
     (7, 'The Great Gatsby', 3, 1925),
     (8, 'Tender Is the Night', 3, 1934),
     (9, 'This Side of Paradise', 3, 1920),
-    -- Ann Leckie
     (10, 'Ancillary Justice', 4, 2013),
     (11, 'Ancillary Sword', 4, 2014),
-    (12, 'Ancillary Mercy', 4, 2015)
+    (12, 'Ancillary Mercy', 4, 2015);
 
 INSERT INTO Sales 
 VALUES 
@@ -104,11 +101,13 @@ VALUES
     (12, 6, 4, '2025-06-12'),
     (13, 5, 2, '2025-06-13'),
     (14, 13, 3, '2025-06-14'),
-    (15, 4, 2, '2025-06-15')
+    (15, 4, 2, '2025-06-15');
 
 
 -- list books and authors
+SELECT * FROM Books, Authors;
 -- Write a query to display a list of all books, including their titles and the names of their authors. Use an INNER JOIN to combine data from the Books and Authors tables.
+SELECT * FROM Books INNER JOIN Authors;
 --Books with No Sales:
 --Write a query to find all books that have never been sold. Use a LEFT JOIN between Books and Sales and look for records where there are no corresponding sales entries.
 --Total Sales for Each Book:
