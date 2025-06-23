@@ -39,4 +39,4 @@ VALUES
 
 SELECT FirstName, AVG(GPA) FROM Students2 ;
 SELECT FirstName FROM Students2 GROUP BY FirstName; 
-SELECT FirstName, AVG(GPA) FROM Students2 GROUP BY FirstName HAVING COUNT(*) > 1 ORDER BY AVG(GPA) DESC;
+SELECT FirstName, AVG(GPA) FROM Students2 GROUP BY FirstName HAVING COUNT(*) > 1 ORDER BY AVG(GPA) DESC; --from reading
