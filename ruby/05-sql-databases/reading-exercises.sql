@@ -67,6 +67,7 @@ VALUES
     (02, "JRR Tolkien"),
     (03, "F. Scott Fitzgerald"),
     (04, "Ann Leckie")
+
 INSERT INTO Books (BookID, Title, AuthorID, PublicationYear)
 VALUES
     -- Sarah J. Maas
@@ -86,6 +87,24 @@ VALUES
     (10, 'Ancillary Justice', 4, 2013),
     (11, 'Ancillary Sword', 4, 2014),
     (12, 'Ancillary Mercy', 4, 2015)
+
+INSERT INTO Sales 
+VALUES 
+    (1, 5, 3, '2025-06-01'),
+    (2, 1, 4, '2025-06-02'),  
+    (3, 6, 2, '2025-06-03'),
+    (4, 7, 6, '2025-06-04'),
+    (5, 10, 3, '2025-06-05'),
+    (6, 4, 1, '2025-06-06'),
+    (7, 8, 2, '2025-06-07'),
+    (8, 13, 5, '2025-06-08'),
+    (9, 11, 3, '2025-06-09'),
+    (10, 12, 2, '2025-06-10'),
+    (11, 9, 1, '2025-06-11'),
+    (12, 6, 4, '2025-06-12'),
+    (13, 5, 2, '2025-06-13'),
+    (14, 13, 3, '2025-06-14'),
+    (15, 4, 2, '2025-06-15')
 
 
 -- list books and authors
