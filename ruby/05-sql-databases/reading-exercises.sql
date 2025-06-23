@@ -43,7 +43,7 @@ SELECT FirstName, AVG(GPA) FROM Students2 GROUP BY FirstName HAVING COUNT(*) > 1
 
 --Exercise 3 bookstore database
 CREATE TABLE Authors(
-    AuthorID varchar(255),
+    AuthorID int,
     AuthorName varchar(255)
 );
 
@@ -85,7 +85,7 @@ VALUES
     (11, 'Ancillary Sword', 4, 2014),
     (12, 'Ancillary Mercy', 4, 2015);
 
-INSERT INTO Sales 
+INSERT INTO Sales(SaleID, BookID, QuantitySold, SaleDate)
 VALUES 
     (1, 5, 3, '2025-06-01'),
     (2, 1, 4, '2025-06-02'),  
@@ -105,12 +105,18 @@ VALUES
 
 
 -- list books and authors
-SELECT * FROM Books, Authors;
+    --SELECT * FROM Books;
+    --SELECT * FROM Authors;
 -- Write a query to display a list of all books, including their titles and the names of their authors. Use an INNER JOIN to combine data from the Books and Authors tables.
-SELECT * FROM Books INNER JOIN Authors;
+   --SELECT * FROM Books INNER JOIN Authors ON Books.AuthorID WHERE Books.AuthorID = Authors.AuthorID;
+    --SELECT * FROM Authors INNER JOIN Books ON Authors.AuthorID WHERE Books.AuthorID = Authors.AuthorID;
 --Books with No Sales:
+    --SELECT * FROM Books WHERE Sales !=
 --Write a query to find all books that have never been sold. Use a LEFT JOIN between Books and Sales and look for records where there are no corresponding sales entries.
+
 --Total Sales for Each Book:
+   --SELECT BookID FROM Sales GROUP BY BookID, SUM(QuantitySold)
 --Write a query to calculate the total quantity sold for each book. Use an INNER JOIN to combine Books and Sales, and then use a GROUP BY clause with an aggregate function (SUM) to calculate total sales.
+    --SELECT BookID FROM Sales INNER JOIN Books on Sales.BookID
 --Sales Data for a Specific Year:
 --Write a query to display the sales data (book title and quantity sold) for all books sold in a specific year (e.g., 2021). This will require joining all three tables and filtering based on SaleDate.
