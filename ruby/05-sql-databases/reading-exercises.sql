@@ -61,6 +61,17 @@ CREATE TABLE Sales (
     SaleDate; date
 )
 
+INSERT INTO Authors(AuthorID, AuthorName)
+VALUES
+    (01, "JRR Tolkien"),
+    (02, "Ann Leckie"),
+    (03, "Saraj J. Maas"),
+    (04, "F. Scott Fitzgerald")
+
+INSERT INTO Books (BookID, Title, AuthorID, PublicationYear)
+VALUES
+ 
+
 
 -- list books and authors
 -- Write a query to display a list of all books, including their titles and the names of their authors. Use an INNER JOIN to combine data from the Books and Authors tables.
