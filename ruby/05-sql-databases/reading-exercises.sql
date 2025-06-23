@@ -105,11 +105,11 @@ VALUES
 
 
 -- list books and authors
-    --SELECT * FROM Books;
-    --SELECT * FROM Authors;
+    SELECT * FROM Books;
+    SELECT * FROM Authors;
 -- Write a query to display a list of all books, including their titles and the names of their authors. Use an INNER JOIN to combine data from the Books and Authors tables.
-   --SELECT * FROM Books INNER JOIN Authors ON Books.AuthorID WHERE Books.AuthorID = Authors.AuthorID;
-    --SELECT * FROM Authors INNER JOIN Books ON Authors.AuthorID WHERE Books.AuthorID = Authors.AuthorID;
+   SELECT * FROM Books INNER JOIN Authors ON Books.AuthorID WHERE Books.AuthorID = Authors.AuthorID; --books first
+   SELECT * FROM Authors INNER JOIN Books ON Authors.AuthorID WHERE Books.AuthorID = Authors.AuthorID; --authors first
 --Books with No Sales:
     --SELECT * FROM Books WHERE Sales !=
 --Write a query to find all books that have never been sold. Use a LEFT JOIN between Books and Sales and look for records where there are no corresponding sales entries.
