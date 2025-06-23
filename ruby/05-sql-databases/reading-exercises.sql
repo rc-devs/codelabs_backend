@@ -18,7 +18,7 @@ VALUES
 SELECT * FROM Students WHERE Major = 'Computer Science' AND GPA >= 3.5;
 
 
--- Exercise 3 Student database (SELECT FirstName, GPA, Filter, AVG sort)
+-- Exercise 2 Student database (SELECT FirstName, GPA, Filter, AVG sort)
 CREATE TABLE Students2 (
     StudentID int,
     LastName varchar(255),
@@ -40,3 +40,33 @@ VALUES
 SELECT FirstName, AVG(GPA) FROM Students2 ;
 SELECT FirstName FROM Students2 GROUP BY FirstName; 
 SELECT FirstName, AVG(GPA) FROM Students2 GROUP BY FirstName HAVING COUNT(*) > 1 ORDER BY AVG(GPA) DESC; --from reading
+
+--Exercise 3 bookstore database
+CREATE TABLE Authors(
+    AuthorID: varchar(255),
+    AuthorName: varchar(255),
+)
+
+CREATE TABLE Books (
+    BookID: int,
+    Title: varchar(255),
+    AuthorID: varchar(255),
+    PublicationYear: int
+)
+
+CREATE TABLE Sales (
+    SaleID: int,
+    BookID: int, 
+    QuantitySold: int,
+    SaleDate; date
+)
+
+
+-- list books and authors
+-- Write a query to display a list of all books, including their titles and the names of their authors. Use an INNER JOIN to combine data from the Books and Authors tables.
+--Books with No Sales:
+--Write a query to find all books that have never been sold. Use a LEFT JOIN between Books and Sales and look for records where there are no corresponding sales entries.
+--Total Sales for Each Book:
+--Write a query to calculate the total quantity sold for each book. Use an INNER JOIN to combine Books and Sales, and then use a GROUP BY clause with an aggregate function (SUM) to calculate total sales.
+--Sales Data for a Specific Year:
+--Write a query to display the sales data (book title and quantity sold) for all books sold in a specific year (e.g., 2021). This will require joining all three tables and filtering based on SaleDate.
