@@ -27,3 +27,9 @@
     email varchar(255),
     password varchar(255),
   )
+
+  INSERT INTO Users(first_name, last_name, email, password)
+  VALUES
+  ("John", "Doe", "johndoe@email.com", "password" )
+  ("Jane", "Doe", "janedoe@email.com", "password" )
+  ("Sally", "Smith", "sallysmith@email.com", "password" )
