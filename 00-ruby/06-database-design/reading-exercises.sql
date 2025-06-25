@@ -25,11 +25,20 @@
     first_name varchar(255),
     last_name varchar(255), 
     email varchar(255),
-    password varchar(255),
+    password varchar(255)
   )
 
-  INSERT INTO Users(first_name, last_name, email, password)
+  INSERT INTO Users(id, first_name, last_name, email, password)
   VALUES
-  ("John", "Doe", "johndoe@email.com", "password" )
-  ("Jane", "Doe", "janedoe@email.com", "password" )
-  ("Sally", "Smith", "sallysmith@email.com", "password" )
+  (1, "John", "Doe", "johndoe@email.com", "password" )
+  (2, "Jane", "Doe", "janedoe@email.com", "password" )
+  (3, "Sally", "Smith", "sallysmith@email.com", "password" )
+
+
+  UPDATE Users
+  SET email = updatedemail@email.com
+  WHERE id = 1
+
+  DELETE Users 
+  WHERE id = 2
+
