@@ -36,9 +36,14 @@
 
 
   UPDATE Users
-  SET email = updatedemail@email.com
-  WHERE id = 1
+  SET email = 'updatedemail@email.com'
+  WHERE id = 1;
 
-  DELETE Users 
-  WHERE id = 2
+  DELETE FROM Users 
+  WHERE id = 2;
 
+  SELECT * FROM Users
+
+-- ouput;
+  --1|John|Doe|updatedemail@email.com|password
+  --3|Sally|Smith|sallysmith@email.com|password
