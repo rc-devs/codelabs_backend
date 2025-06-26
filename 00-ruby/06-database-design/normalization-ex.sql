@@ -4,7 +4,6 @@ CREATE TABLE users (
   last_name TEXT,
   email TEXT,
   password TEXT,
-  addresses TEXT
 );
 
 CREATE TABLE addresses(
