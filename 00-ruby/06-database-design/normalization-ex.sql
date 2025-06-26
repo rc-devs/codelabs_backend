@@ -13,5 +13,5 @@ CREATE TABLE phone_numbers (
   user_id int,
   phone_type varchar(255)
   phone_number text,
-  FOREIGN KEY (user_id) REFERENCE (users.id)
+  FOREIGN KEY (user_id) REFERENCES (users.id)
 );
