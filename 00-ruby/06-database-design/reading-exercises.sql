@@ -47,3 +47,29 @@
 -- ouput;
   --1|John|Doe|updatedemail@email.com|password
   --3|Sally|Smith|sallysmith@email.com|password
+
+
+INSERT INTO products (name, price)
+VALUES 
+  ('Product 1', 10.00);
+  ('Product 2', 20.00);
+  ('Product 3', 30.00);
+
+INSERT INTO orders (customer_id)
+VALUES 
+  (1);
+  (2);
+
+INSERT INTO order_items (order_id, product_id)
+VALUES 
+  (1, 1);
+  (1, 2);
+
+INSERT INTO order_items (order_id, product_id)
+VALUES 
+  (2, 2);
+  (2, 3);
+
+SELECT * FROM products;
+SELECT * FROM orders;
+SELECT * FROM order_items;
